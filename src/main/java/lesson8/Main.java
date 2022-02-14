@@ -3,7 +3,7 @@ package lesson8;
 public class Main {
 
     public static void main(String[] args) {
-        var hashTable = new HashTableImpl<>(5);
+        var hashTable = new HashTableChainImpl<>(5);
 
         hashTable.put(new Product(1, "Orange"), 150); //1
         hashTable.put(new Product(77, "Banana"), 100); //7
@@ -28,6 +28,7 @@ public class Main {
 
         hashTable.put(new Product(47, "Pineapple"), 228);
 
+        System.out.println("Size is " + hashTable.size());
         hashTable.display();
     }
 }
